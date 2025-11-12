@@ -82,7 +82,7 @@ USE COLLEGEDATABASE;
 ````
 ### DATA CLEANING 
 #### Check Null Values (using count)
-##### ATTENDANCE TABLE
+####ATTENDANCE TABLE
 Query :
 ```sql
 SELECT COUNT(*) AS NULL_VALUES FROM ATTENDANCE WHERE ATTENDANCEID IS NULL OR
@@ -93,7 +93,7 @@ SELECT COUNT(*) AS NULL_VALUES FROM ATTENDANCE WHERE ATTENDANCEID IS NULL OR
 ```
 Result:
 
-##### COURSES TABLE
+#### COURSES TABLE
 Query :
 ```sql
 SELECT COUNT(*) AS NULL_VALUES FROM COURSES WHERE COURSEID IS NULL OR
@@ -103,7 +103,7 @@ SELECT COUNT(*) AS NULL_VALUES FROM COURSES WHERE COURSEID IS NULL OR
                               INSTRUCTOR IS NULL;
 ```
 Result:
-##### STUDENTS TABLE
+#### STUDENTS TABLE
 Query :
 ```sql
 SELECT COUNT(*) AS NULL_VALUES FROM STUDENTS WHERE FIRSTNAME IS NULL OR
@@ -167,7 +167,7 @@ DESC ENROLLMENTS;
 ALTER TABLE ENROLLMENTS MODIFY COLUMN YEAR YEAR;
 ```
 Result:
-### Analysis Process
+### ANALYSIS PROCESS
 #### List all students with their full name, gender, major, and GPA
 Query:
 ```sql
@@ -277,7 +277,7 @@ WHERE rn = 1;
 ```
 Result:
 
-## 🧠 Project Highlights
+## 🧠 PROJECT HIGHLIGHTS
 
 - Created **6 fully normalized tables** with appropriate primary and foreign keys.  
 - Implemented advanced SQL queries** using:
@@ -293,6 +293,12 @@ Result:
 
 
 ---
+### CONCLUSION
+-Through this project, I gained practical experience in creating, managing, and querying databases using SQL. 
+-The project involved designing a well-structured database, implementing relationships between multiple tables, and writing optimized SQL queries to retrieve meaningful insights.
+-By working on this project, I improved my understanding of database normalization, joins, subqueries, and aggregate functions.
+-It also enhanced my ability to handle real-world data scenarios such as data cleaning, filtering, and reporting. 
+-Overall, this project strengthened my SQL skills and provided hands-on experience in solving data-related challenges efficiently.
 
 
 
