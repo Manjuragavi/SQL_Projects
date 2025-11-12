@@ -90,6 +90,7 @@ SELECT COUNT(*) AS NULL_VALUES FROM ATTENDANCE WHERE ATTENDANCEID IS NULL OR
                               ATTENDANCESTATUS IS NULL;
 ```
 
+
 ## 🧠 Project Highlights
 
 - Created **6 fully normalized tables** with appropriate primary and foreign keys.  
