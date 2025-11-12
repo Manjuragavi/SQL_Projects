@@ -89,7 +89,27 @@ SELECT COUNT(*) AS NULL_VALUES FROM ATTENDANCE WHERE ATTENDANCEID IS NULL OR
                               DATE IS NULL OR
                               ATTENDANCESTATUS IS NULL;
 ```
+Result:
 
+####COURSES TABLE
+```sql
+SELECT COUNT(*) AS NULL_VALUES FROM COURSES WHERE COURSEID IS NULL OR
+                              COURSENAME IS NULL OR
+                              DEPARTMENT IS NULL OR
+                              CREDITS IS NULL OR
+                              INSTRUCTOR IS NULL;
+```
+Result:
+####STUDENTS TABLE
+```sql
+SELECT COUNT(*) AS NULL_VALUES FROM STUDENTS WHERE FIRSTNAME IS NULL OR
+                              STUDENTID IS NULL OR
+                              LASTNAME IS NULL OR
+                              GENDER IS NULL OR
+                              DATEOFBIRTH IS NULL OR
+                              MAJOR IS NULL OR
+                              GPA IS NULL;
+```
 
 ## 🧠 Project Highlights
 
