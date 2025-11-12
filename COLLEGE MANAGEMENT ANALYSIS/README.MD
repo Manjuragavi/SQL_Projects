@@ -75,10 +75,20 @@ This project focuses on designing and managing a College Database System using M
 ## Data aggregation 
 
 ### Create the Database
+Query :
 ```` sql 
 CREATE DATABASE COLLEGEDATABASE;
 USE COLLEGEDATABASE;
 ````
+### DATA CLEANING 
+#### ATTENDANCE TABLE
+```sql
+SELECT COUNT(*) AS NULL_VALUES FROM ATTENDANCE WHERE ATTENDANCEID IS NULL OR
+                              STUDENTID IS NULL OR
+                              COURSEID IS NULL OR
+                              DATE IS NULL OR
+                              ATTENDANCESTATUS IS NULL;
+```
 
 ## 🧠 Project Highlights
 
