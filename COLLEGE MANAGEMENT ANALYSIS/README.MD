@@ -82,8 +82,8 @@ USE COLLEGEDATABASE;
 ````
 ### DATA CLEANING 
 #### Check Null Values (using count)
-####ATTENDANCE TABLE
-Query :
+#### ATTENDANCE TABLE
+Query:
 ```sql
 SELECT COUNT(*) AS NULL_VALUES FROM ATTENDANCE WHERE ATTENDANCEID IS NULL OR
                               STUDENTID IS NULL OR
