@@ -293,7 +293,7 @@ Result:
 
 
 ---
-### CONCLUSION
+## CONCLUSION
 -Through this project, I gained practical experience in creating, managing, and querying databases using SQL. 
 -The project involved designing a well-structured database, implementing relationships between multiple tables, and writing optimized SQL queries to retrieve meaningful insights.
 -By working on this project, I improved my understanding of database normalization, joins, subqueries, and aggregate functions.
