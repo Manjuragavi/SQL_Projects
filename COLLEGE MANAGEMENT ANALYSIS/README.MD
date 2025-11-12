@@ -73,9 +73,12 @@ This project focuses on designing and managing a College Database System using M
 
 ---
 ##Data aggregation 
+
 ###Create the Database
+```` sql 
 CREATE DATABASE COLLEGEDATABASE;
 USE COLLEGEDATABASE;
+````
 
 ## 🧠 Project Highlights
 
