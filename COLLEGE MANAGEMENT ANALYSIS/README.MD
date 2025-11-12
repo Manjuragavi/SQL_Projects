@@ -294,11 +294,11 @@ Result:
 
 ---
 ## CONCLUSION
--Through this project, I gained practical experience in creating, managing, and querying databases using SQL. 
--The project involved designing a well-structured database, implementing relationships between multiple tables, and writing optimized SQL queries to retrieve meaningful insights.
--By working on this project, I improved my understanding of database normalization, joins, subqueries, and aggregate functions.
--It also enhanced my ability to handle real-world data scenarios such as data cleaning, filtering, and reporting. 
--Overall, this project strengthened my SQL skills and provided hands-on experience in solving data-related challenges efficiently.
+Through this project, I gained practical experience in creating, managing, and querying databases using SQL. 
+The project involved designing a well-structured database, implementing relationships between multiple tables, and writing optimized SQL queries to retrieve meaningful insights.
+
+By working on this project, I improved my understanding of database normalization, joins, subqueries, and aggregate functions.It also enhanced my ability to handle real-world data scenarios such as data cleaning, filtering, and reporting. 
+Overall, this project strengthened my SQL skills and provided hands-on experience in solving data-related challenges efficiently.
 
 
 
