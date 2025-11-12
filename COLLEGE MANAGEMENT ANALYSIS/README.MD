@@ -9,8 +9,7 @@ It demonstrates strong database design, query optimization, and data analysis sk
 
 - **Database:** MySQL  
 - **Query Tool:**  MySQL Workbench  
-- **Data Format:** SQL, CSV  
-- **Version Control:** Git & GitHub  
+- **Data Format:** SQL, CSV   
 
 ---
 
