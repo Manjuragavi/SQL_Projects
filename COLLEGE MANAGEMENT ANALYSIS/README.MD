@@ -1,4 +1,4 @@
-# 🎓 Student Management System – SQL Project
+# 🎓 College  Management Analysis – SQL Project
 ## Description
 This project focuses on designing and managing a College Database System using MySQL to perform data cleaning, analysis, and reporting. It demonstrates the use of SQL queries, joins, views, aggregation, and analytical functions to extract meaningful insights from college-related data such as student details, attendance, grades, feedback, and course enrollments.
 
@@ -72,6 +72,10 @@ This project focuses on designing and managing a College Database System using M
 | FeedbackText | Student’s comments or suggestions |
 
 ---
+##Data aggregation 
+###Create the Database
+CREATE DATABASE COLLEGEDATABASE;
+USE COLLEGEDATABASE;
 
 ## 🧠 Project Highlights
 
