@@ -280,7 +280,7 @@ Result:
 ## 🧠 Project Highlights
 
 - Created **6 fully normalized tables** with appropriate primary and foreign keys.  
-- Implemented **20+ advanced SQL queries** using:
+- Implemented advanced SQL queries** using:
   - Joins (INNER, LEFT, RIGHT)
   - Aggregations (SUM, AVG, COUNT)
   - Subqueries and CTEs
@@ -290,18 +290,10 @@ Result:
 
 ---
 
-## 🧩 Sample Queries
 
-- Find students taking more than 3 courses in the same semester.  
-- Calculate average GPA by department.  
-- Identify top 5 students with highest GPA.  
-- Get attendance percentage per student.  
-- Find courses with the highest enrollment.  
-- Retrieve students who have never been absent.  
-- Analyze average score by assignment type.  
 
 ---
 
-## 📂 Project Structure
+
 
 
