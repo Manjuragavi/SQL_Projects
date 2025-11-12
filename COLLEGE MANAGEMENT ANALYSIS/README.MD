@@ -1,7 +1,6 @@
 # 🎓 Student Management System – SQL Project
-
-This project is a **SQL-based Student Management System** designed to store, manage, and analyze information about students, courses, grades, attendance, and feedback.  
-It demonstrates strong database design, query optimization, and data analysis skills — ideal for academic or portfolio use.
+## Description
+This project focuses on designing and managing a College Database System using MySQL to perform data cleaning, analysis, and reporting. It demonstrates the use of SQL queries, joins, views, aggregation, and analytical functions to extract meaningful insights from college-related data such as student details, attendance, grades, feedback, and course enrollments.
 
 ---
 
