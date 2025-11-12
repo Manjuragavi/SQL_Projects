@@ -8,7 +8,7 @@ It demonstrates strong database design, query optimization, and data analysis sk
 ## 🧰 Tools & Technologies
 
 - **Database:** MySQL  
-- **Query Tool:** DBeaver / MySQL Workbench  
+- **Query Tool:**  MySQL Workbench  
 - **Data Format:** SQL, CSV  
 - **Version Control:** Git & GitHub  
 
