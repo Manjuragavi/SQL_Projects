@@ -93,7 +93,7 @@ SELECT COUNT(*) AS NULL_VALUES FROM ATTENDANCE WHERE ATTENDANCEID IS NULL OR
                               ATTENDANCESTATUS IS NULL;
 ```
 Result:
-
+![images](https://github.com/Manjuragavi/SQL_Projects/blob/ece237cac1e9cdc55da5c1e6e1fdc6a35b8574c3/COLLEGE%20MANAGEMENT%20ANALYSIS/Images/Result%201.png)
 #### COURSES TABLE
 Query :
 ```sql
