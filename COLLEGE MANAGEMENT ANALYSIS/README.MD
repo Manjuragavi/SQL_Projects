@@ -168,7 +168,7 @@ ALTER TABLE ATTENDANCE MODIFY COLUMN DATE DATE;
 ```
 Result:
 ![images](https://github.com/Manjuragavi/SQL_Projects/blob/f414fb450cf13916725dd24171f122793c17546e/COLLEGE%20MANAGEMENT%20ANALYSIS/Images/Result%208.png)
-```
+
 Query:
 ```sql
 DESC ENROLLMENTS;
