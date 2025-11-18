@@ -104,6 +104,7 @@ SELECT COUNT(*) AS NULL_VALUES FROM COURSES WHERE COURSEID IS NULL OR
                               INSTRUCTOR IS NULL;
 ```
 Result:
+![images](https://github.com/Manjuragavi/SQL_Projects/blob/f414fb450cf13916725dd24171f122793c17546e/COLLEGE%20MANAGEMENT%20ANALYSIS/Images/Result%202.png)
 #### STUDENTS TABLE
 Query :
 ```sql
@@ -116,6 +117,7 @@ SELECT COUNT(*) AS NULL_VALUES FROM STUDENTS WHERE FIRSTNAME IS NULL OR
                               GPA IS NULL;
 ```
 Result:
+![images](https://github.com/Manjuragavi/SQL_Projects/blob/f414fb450cf13916725dd24171f122793c17546e/COLLEGE%20MANAGEMENT%20ANALYSIS/Images/Result%203.png)
 ### COLUMN WISE NULL VALUES
 Query:
 ```sql
@@ -128,6 +130,7 @@ SELECT SUM(CASE WHEN STUDENTID IS NULL THEN 1 ELSE 0 END) AS STUDENTID,
 	   SUM(CASE WHEN GPA IS NULL THEN 1 ELSE 0 END) AS GPA FROM STUDENTS;
 ```
 Result:
+![images](https://github.com/Manjuragavi/SQL_Projects/blob/f414fb450cf13916725dd24171f122793c17546e/COLLEGE%20MANAGEMENT%20ANALYSIS/Images/Result%204.png)
 
 ### CHECKING DUPLICATE VALUES IN TABLES
 Query:
@@ -137,6 +140,7 @@ GROUP BY STUDENTID
 HAVING COUNT(*)>1;
 ```
 Result:
+![images](https://github.com/Manjuragavi/SQL_Projects/blob/f414fb450cf13916725dd24171f122793c17546e/COLLEGE%20MANAGEMENT%20ANALYSIS/Images/Result%205.png)
 ``
 Query:
 ```sql
@@ -145,6 +149,7 @@ GROUP BY ENROLLMENTID
 HAVING COUNT(*)>1;
 ```
 Result:
+![images](https://github.com/Manjuragavi/SQL_Projects/blob/f414fb450cf13916725dd24171f122793c17546e/COLLEGE%20MANAGEMENT%20ANALYSIS/Images/Result%206.png)
 
 ### CHECKING DATATYPE IN TABLE
 Query:
@@ -154,6 +159,7 @@ SET SQL_SAFE_UPDATE=0;
 UPDATE ATTENDANCE
 ``` 
 Result:
+![images](https://github.com/Manjuragavi/SQL_Projects/blob/f414fb450cf13916725dd24171f122793c17546e/COLLEGE%20MANAGEMENT%20ANALYSIS/Images/Result%207.png)
 ``
 Query:
 ```sql
@@ -161,6 +167,7 @@ SET DATE=STR_TO_DATE(DATE,'%Y-%M-%D');
 ALTER TABLE ATTENDANCE MODIFY COLUMN DATE DATE;
 ```
 Result:
+![images](https://github.com/Manjuragavi/SQL_Projects/blob/f414fb450cf13916725dd24171f122793c17546e/COLLEGE%20MANAGEMENT%20ANALYSIS/Images/Result%208.png)
 ```
 Query:
 ```sql
@@ -168,6 +175,7 @@ DESC ENROLLMENTS;
 ALTER TABLE ENROLLMENTS MODIFY COLUMN YEAR YEAR;
 ```
 Result:
+![images](https://github.com/Manjuragavi/SQL_Projects/blob/f414fb450cf13916725dd24171f122793c17546e/COLLEGE%20MANAGEMENT%20ANALYSIS/Images/Result%209.png)
 ### ANALYSIS PROCESS
 #### List all students with their full name, gender, major, and GPA
 Query:
@@ -175,24 +183,28 @@ Query:
  SELECT CONCAT(FIRSTNAME," ",LASTNAME) AS FULLNAME,GENDER,MAJOR,GPA FROM STUDENTS;
 ```
 Result:
+![images](https://github.com/Manjuragavi/SQL_Projects/blob/f414fb450cf13916725dd24171f122793c17546e/COLLEGE%20MANAGEMENT%20ANALYSIS/Images/Result%2010.png)
 #### Show the attendance records for a given student on a particular date
 Query:
 ```sql
  SELECT *FROM ATTENDANCE WHERE STUDENTID=1086 AND DATE='2022/06/07';
 ```
 Result:
+![images](https://github.com/Manjuragavi/SQL_Projects/blob/f414fb450cf13916725dd24171f122793c17546e/COLLEGE%20MANAGEMENT%20ANALYSIS/Images/Result%2011.png)
  #### List all enrollment records for the current year
 Query:
 ```sql
  SELECT *FROM ENROLLMENTS WHERE YEAR=2024;
 ```
 Result:
+![images](https://github.com/Manjuragavi/SQL_Projects/blob/f414fb450cf13916725dd24171f122793c17546e/COLLEGE%20MANAGEMENT%20ANALYSIS/Images/Result%2012.png)
  #### Display all feedback submitted, ordered from newest to oldest
 Query:
 ```sql
  SELECT *FROM FEEDBACK ORDER BY FEEDBACKDATE DESC LIMIT 15;
 ```
 Result:
+![images](https://github.com/Manjuragavi/SQL_Projects/blob/f414fb450cf13916725dd24171f122793c17546e/COLLEGE%20MANAGEMENT%20ANALYSIS/Images/Result%2013.png)
 #### Show each student's enrolled courses (Student Full Name + Course Name + Semester + Year).
 Query:
 ```sql
@@ -218,6 +230,7 @@ JOIN ATTENDANCE AS D ON A.STUDENTID=D.STUDENTID
 JOIN GRADES AS E ON A.STUDENTID=E.STUDENTID);
 ```
 Result:
+![images](https://github.com/Manjuragavi/SQL_Projects/blob/f414fb450cf13916725dd24171f122793c17546e/COLLEGE%20MANAGEMENT%20ANALYSIS/Images/Result%2014.png)
 #### Count how many students are enrolled in each course
 Query:
 ```sql
@@ -225,6 +238,7 @@ SELECT COUNT(STUDENTID) AS TOTAL_STUDENTS,COURSENAME FROM JOINTABLE
 GROUP BY COURSENAME;
 ```
 Result:
+![images](https://github.com/Manjuragavi/SQL_Projects/blob/f414fb450cf13916725dd24171f122793c17546e/COLLEGE%20MANAGEMENT%20ANALYSIS/Images/Result%2015.png)
 #### Find the average grade score for each course 
 Query:
 ```sql 
@@ -233,6 +247,7 @@ GROUP BY COURSEID
 ORDER BY AVG(SCORE) DESC LIMIT 10;
 ````
 Result:
+![images](https://github.com/Manjuragavi/SQL_Projects/blob/f414fb450cf13916725dd24171f122793c17546e/COLLEGE%20MANAGEMENT%20ANALYSIS/Images/Result%2016.png)
 #### Calculate the attendance percentage for each student in each course.
 Query:
 ```sql
@@ -241,6 +256,7 @@ FROM ATTENDANCE
 GROUP BY StudentID, CourseID;
 ```
 Result:
+![images](https://github.com/Manjuragavi/SQL_Projects/blob/f414fb450cf13916725dd24171f122793c17546e/COLLEGE%20MANAGEMENT%20ANALYSIS/Images/Result%2017.png)
 #### Identify students with attendance below 75% in any course.
 Query:
 ```sql
@@ -250,6 +266,7 @@ GROUP BY COURSEID,STUDENTID
 HAVING ATTENDANCEPERCENTAGE<90;
 ```
 Result:
+![images](https://github.com/Manjuragavi/SQL_Projects/blob/f414fb450cf13916725dd24171f122793c17546e/COLLEGE%20MANAGEMENT%20ANALYSIS/Images/Result%2018.png)
 #### Determine the most popular course (highest enrollment count).
 Query:
 ```sql
@@ -259,6 +276,7 @@ GROUP BY COURSEID
 ORDER BY HIGH_COUNT DESC LIMIT 1;
 ```
 Result:
+![images](https://github.com/Manjuragavi/SQL_Projects/blob/f414fb450cf13916725dd24171f122793c17546e/COLLEGE%20MANAGEMENT%20ANALYSIS/Images/Result%2020.png)
 #### Find students who are taking more than 3 courses in the same semester.
 Query:
 ```sql
@@ -267,6 +285,7 @@ GROUP BY STUDENTID,SEMESTER,YEAR
 HAVING COUNT(COURSEID)>0;
 ```
 Result:
+![images](https://github.com/Manjuragavi/SQL_Projects/blob/f414fb450cf13916725dd24171f122793c17546e/COLLEGE%20MANAGEMENT%20ANALYSIS/Images/Result%2021.png)
 #### List students who scored the highest Score in each course for a specific assignment type.
 Query:
 ```sql
@@ -277,6 +296,7 @@ FROM (SELECT AssignmentType,CourseID,StudentID,Score,ROW_NUMBER() OVER (PARTITIO
 WHERE rn = 1;
 ```
 Result:
+![images](https://github.com/Manjuragavi/SQL_Projects/blob/f414fb450cf13916725dd24171f122793c17546e/COLLEGE%20MANAGEMENT%20ANALYSIS/Images/Result%2022.png)
 
 ## 🧠 PROJECT HIGHLIGHTS
 
