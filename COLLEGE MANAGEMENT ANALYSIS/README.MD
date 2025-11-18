@@ -160,7 +160,7 @@ UPDATE ATTENDANCE
 ``` 
 Result:
 ![images](https://github.com/Manjuragavi/SQL_Projects/blob/f414fb450cf13916725dd24171f122793c17546e/COLLEGE%20MANAGEMENT%20ANALYSIS/Images/Result%207.png)
-``
+
 Query:
 ```sql
 SET DATE=STR_TO_DATE(DATE,'%Y-%M-%D');
